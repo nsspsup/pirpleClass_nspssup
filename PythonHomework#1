@@ -1,0 +1,12 @@
+Artist = 'Pearl Jam'
+Album = 'Ten'
+Released = 1991
+Duration_minutes = 5
+Duration_seconds = 40
+Total_seconds = Duration_minutes*60 + Duration_seconds
+
+
+print(Artist)
+print(Album)
+print(Released)
+print(Total_seconds)
