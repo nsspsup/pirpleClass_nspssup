@@ -1,0 +1,26 @@
+
+Duration_minutes = 5
+Duration_seconds = 40
+Total_seconds = Duration_minutes * 60 + Duration_seconds
+
+def Artist():
+    value = 'Pearl Jam'
+    return value
+
+def Album():
+    value = 'Ten'
+    return value
+
+def Duration():
+
+    value = Total_seconds
+    return value
+
+def long_song():
+    return Total_seconds > 300
+
+
+print(Artist())
+print(Album())
+print(Duration())
+print(long_song())
