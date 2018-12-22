@@ -1,0 +1,31 @@
+myUniqueList = []
+leftovers = []
+
+def addUnique(x):
+
+    global myUniqueList, leftovers
+
+    if x in myUniqueList:
+        leftovers.insert(0,x)
+        return False
+    else:
+        myUniqueList.append(x)
+        return True
+
+print(addUnique(5))
+print(addUnique(5))
+
+addUnique(1)
+addUnique(1)
+addUnique(2)
+addUnique("b")
+addUnique("c")
+addUnique("b")
+
+print(f"""
+unique list: {myUniqueList}
+leftovers:   {leftovers}
+""")
+
+
+
