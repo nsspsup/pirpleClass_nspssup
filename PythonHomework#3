@@ -1,0 +1,10 @@
+def compare(a, b, c):
+    a = int(a)
+    b = int(b)
+    c = int(c)
+
+    return a == b \
+        or a == c \
+        or b == c
+
+print(compare('2', 2 ,1 ))
