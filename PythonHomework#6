@@ -1,0 +1,34 @@
+import shutil
+
+rowSep="-"
+colSep="|"
+
+maxWidth = shutil.get_terminal_size().columns
+maxHeight = shutil.get_terminal_size().lines
+
+def board(boardSize):
+    
+    boardSize = int(boardSize)
+    
+    if boardSize > maxWidth or boardSize > maxHeight:
+        return False
+    else:
+        for row in range(boardSize):
+            if row%2 == 1:
+                print(rowSep * (boardSize))
+            else:
+                for col in range(boardSize):
+                    if col%2 == 1:
+                        if col == boardSize -1:
+                            print(colSep)
+                        else:
+                            print(colSep,end="")
+                    else:
+                        if col == boardSize -1:
+                            print(" ")
+                        else:
+                            print(" ",end="")
+        return True
+
+size = input("desired board size? >: ")
+print(board(size))
