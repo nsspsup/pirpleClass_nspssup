@@ -70,7 +70,6 @@ def make_choice():
     choice = int(input(">>>: ")) - 1
     while choice < 0 or choice >6:
         print("value must be between 1 and 7")
-        print(type(choice))
         make_choice()
     return choice
 
