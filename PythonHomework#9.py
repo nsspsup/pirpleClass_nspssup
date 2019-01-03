@@ -33,7 +33,7 @@ class Cars(Vehicle):
     def stop(self):
         if self.isDriving == True:
             self.TripsSinceMaintenance += 1
-        if self.TripsSinceMaintenance < 5:
+        if self.TripsSinceMaintenance > 5:
             self.NeedsMaintenance = True
 
         self.isDriving = False
@@ -65,7 +65,7 @@ class Planes(Vehicle):
     def land(self):
         if self.isFlying == True:
             self.TripsSinceMaintenance += 1
-        if self.TripsSinceMaintenance < 5:
+        if self.TripsSinceMaintenance > 5:
             self.NeedsMaintenance = True
 
 
@@ -157,7 +157,7 @@ def menu2(selectedCar):
     else:
         print("invalid choice")
         menu2(selectedCar)
-
+        time.sleep(1)
 
 while True:
     menu1()
