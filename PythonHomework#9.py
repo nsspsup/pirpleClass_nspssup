@@ -117,7 +117,6 @@ def menu1():
     menu2(selectedCar)
 
 def menu2(selectedCar):
-    sys.stdout.flush()
     print("""
         ACTIONS:
     -------------    
